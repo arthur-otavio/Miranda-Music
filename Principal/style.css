@@ -1,0 +1,79 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: transparent;
+    height: 100px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    transition: transform 1s ease;
+    z-index: 9999;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #111, #000);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.carousel-section {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    animation: slide 20s linear infinite;
+}
+
+.carousel-item {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transform: skew(-20deg);
+    border: 2px solid #0ff;
+    box-shadow: 0 0 15px #0ff;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    border-top: 1px solid #111;
+}
+
+.section h2 {
+    color: #0ff;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #ccc;
+}
